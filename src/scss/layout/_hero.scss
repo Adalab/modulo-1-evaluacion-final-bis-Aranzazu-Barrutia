@@ -1,23 +1,33 @@
 .hero {
   height: 100vh;
-  background-image: url("../images/heromedium.jpg");
+  background-image: url("../images/herosmall.jpg");
   background-repeat: no-repeat;
-  background-position: 60%;
-  background-size: 195%;
-  background-attachment: fixed;
+  background-position: 65%;
+  background-size: 210%;
+
   @media all and (min-width: 768px) {
+    background-image: url("../images/heromedium.jpg");
     background-position: 60%;
     background-size: 180%;
   }
+  @media all and (min-width: 1024px) {
+    background-image: url("../images/herobig.jpg");
+    background-position: 40%;
+    background-size: 100%;
+  }
 
   &-slogan {
-    position: relative;
     margin: 300px 200px 60px 20px;
-    transform: translateX(5px);
     transform: translateY(280px);
     font-family: $font, $regular;
     font-size: 3rem;
     color: #ffffff;
+    @media all and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      font-size: 6rem;
+    }
     @media all and (min-width: 768px) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
