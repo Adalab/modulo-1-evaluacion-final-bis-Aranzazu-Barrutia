@@ -1,0 +1,18 @@
+.footer {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  padding: 34px 105px 37px 106px;
+  transform: translateY(-385px);
+
+  &-copy {
+    font-family: $font;
+    font-weight: 400;
+    color: $grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+  }
+}
