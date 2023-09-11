@@ -2,36 +2,37 @@
   height: 100vh;
   background-image: url("../images/herosmall.jpg");
   background-repeat: no-repeat;
-  background-position: 65%;
-  background-size: 210%;
-
+  background-position: 68%;
+  background-size: 270%;
   @media all and (min-width: 768px) {
     background-image: url("../images/heromedium.jpg");
-    background-position: 60%;
-    background-size: 180%;
+    background-position: 59%;
+    background-size: 200%;
   }
   @media all and (min-width: 1024px) {
     background-image: url("../images/herobig.jpg");
-    background-position: 40%;
+    background-position: 30%;
     background-size: 100%;
   }
 
   &-slogan {
-    margin: 300px 200px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 129px;
+    margin-right: 139px;
+    margin-left: 20px;
     transform: translateY(280px);
     font-family: $font, $regular;
     font-size: 3rem;
     color: #ffffff;
     @media all and (min-width: 768px) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-
+      margin-top: 20px;
+      margin-right: 416px;
+      margin-left: 30px;
       font-size: 6rem;
     }
-    @media all and (min-width: 768px) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      font-size: 6rem;
+    @media all and (min-width: 1024px) {
+      margin: 322px 652px 213px 50px;
     }
   }
 }

@@ -3,7 +3,7 @@
   width: 100%;
   background-color: black;
   padding: 34px 105px 37px 106px;
-  transform: translateY(-390px);
+  transform: translateY(-215.5px);
 
   &-copy {
     font-family: $font;
@@ -14,5 +14,11 @@
     justify-content: center;
     align-items: center;
     background-color: $black;
+  }
+  @media all and (min-width: 768px) {
+    transform: translateY(-100px);
+  }
+  @media all and (min-width: 1024px) {
+    transform: translateY(-407px);
   }
 }

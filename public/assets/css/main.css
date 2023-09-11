@@ -15,26 +15,28 @@ html {
 .header {
   gap: 60px;
   height: 100vh;
+  width: 100%;
   padding-inline: 83px;
-  position: fixed;
-  margin-top: -290px; }
+  position: fixed; }
   .header-logo {
+    width: 150px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     transform: scale(13.7%);
-    width: 150px;
-    height: 60px; }
+    margin-top: -120px; }
     @media all and (min-width: 768px) {
       .header-logo {
-        transform: scale(20%);
-        width: 155px;
-        margin: 20px -30px 20px; } }
+        transform: scale(13.9%);
+        margin-top: 2px;
+        margin-right: 30px; } }
     @media all and (min-width: 1024px) {
       .header-logo {
         transform: scale(15%);
         width: 155px;
-        margin: 20px -60px 20px; } }
+        margin: 20px -60px 20px;
+        margin-top: -300px; } }
   .header-nav-ul {
     display: flex;
     justify-content: space-around;
@@ -44,7 +46,7 @@ html {
     @media all and (min-width: 768px) {
       .header-nav-ul {
         margin-left: 450px;
-        transform: translateY(-53px);
+        transform: translateY(-40px);
         gap: 4rem; } }
     @media all and (min-width: 1024px) {
       .header-nav-ul {
@@ -62,41 +64,44 @@ html {
   height: 100vh;
   background-image: url("../images/herosmall.jpg");
   background-repeat: no-repeat;
-  background-position: 65%;
-  background-size: 210%; }
+  background-position: 68%;
+  background-size: 270%; }
   @media all and (min-width: 768px) {
     .hero {
       background-image: url("../images/heromedium.jpg");
-      background-position: 60%;
-      background-size: 180%; } }
+      background-position: 59%;
+      background-size: 200%; } }
   @media all and (min-width: 1024px) {
     .hero {
       background-image: url("../images/herobig.jpg");
-      background-position: 40%;
+      background-position: 30%;
       background-size: 100%; } }
   .hero-slogan {
-    margin: 300px 200px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 129px;
+    margin-right: 139px;
+    margin-left: 20px;
     transform: translateY(280px);
     font-family: "Rubik", sans-serif, 400;
     font-size: 3rem;
     color: #ffffff; }
     @media all and (min-width: 768px) {
       .hero-slogan {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        margin-top: 20px;
+        margin-right: 416px;
+        margin-left: 30px;
         font-size: 6rem; } }
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 1024px) {
       .hero-slogan {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        font-size: 6rem; } }
+        margin: 322px 652px 213px 50px; } }
 
 .footer {
   position: fixed;
   width: 100%;
   background-color: black;
   padding: 34px 105px 37px 106px;
-  transform: translateY(-390px); }
+  transform: translateY(-215.5px); }
   .footer-copy {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
@@ -106,5 +111,11 @@ html {
     justify-content: center;
     align-items: center;
     background-color: #252525; }
+  @media all and (min-width: 768px) {
+    .footer {
+      transform: translateY(-100px); } }
+  @media all and (min-width: 1024px) {
+    .footer {
+      transform: translateY(-407px); } }
 
 /*# sourceMappingURL=main.css.map */

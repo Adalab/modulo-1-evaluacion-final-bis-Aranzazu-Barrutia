@@ -1,26 +1,29 @@
 .header {
   gap: 60px;
   height: 100vh;
+  width: 100%;
   padding-inline: 83px;
   position: fixed;
-  margin-top: -290px;
 
   &-logo {
+    width: 150px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     transform: scale(13.7%);
-    width: 150px;
-    height: 60px;
+    margin-top: -120px;
+
     @media all and (min-width: 768px) {
-      transform: scale(20%);
-      width: 155px;
-      margin: 20px -30px 20px;
+      transform: scale(13.9%);
+      margin-top: 2px;
+      margin-right: 30px;
     }
     @media all and (min-width: 1024px) {
       transform: scale(15%);
       width: 155px;
       margin: 20px -60px 20px;
+      margin-top: -300px;
     }
   }
 
@@ -33,8 +36,7 @@
       text-transform: uppercase;
       @media all and (min-width: 768px) {
         margin-left: 450px;
-        // transform: translateX(40px);
-        transform: translateY(-53px);
+        transform: translateY(-40px);
         gap: 4rem;
       }
       @media all and (min-width: 1024px) {
